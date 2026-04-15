@@ -27,10 +27,6 @@ for(let i = 1; i <= T; i++){
             dp[j] = dp[j - 1] + dp[0]
             continue
         }
-        if(j === 3){
-            dp[j] = dp[j - 1] + dp[j - 2] + dp[0]
-            continue
-        }
         dp[j] = dp[j - 1] + dp[j - 2] + dp[j - 3]
     }
     
