@@ -25,4 +25,4 @@ for(let i = 1; i < n; i++){
     dp[i] = Math.max(dp[i - 1], dp[i - 2] + data[i], dp[i - 3] + data[i - 1] + data[i])
 }
 
-console.log(Math.max(...dp))
+console.log(dp[n - 1])
